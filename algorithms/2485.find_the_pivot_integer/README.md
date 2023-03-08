@@ -67,27 +67,6 @@ func pivotInteger(n int) int {
 }
 ```
 
-##### TypeScript
-
-```typescript
-const pivotIndex = (n: number): number => {
-  let sumOfAllNumbers = (n * (n + 1)) / 2
-  let sumOfFirstKNumbers = 0
-
-  for (let k = 1; k <= n; k++) {
-    sumOfFirstKNumbers += k
-
-    if (sumOfFirstKNumbers === sumOfAllNumbers) {
-      return k
-    }
-
-    sumOfAllNumbers -= k
-  }
-
-  return -1
-}
-```
-
 #### Complexity Analysis
 
 - **Time Complexity** : `O(n)` where `n` is the input integer.

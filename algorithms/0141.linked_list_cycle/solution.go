@@ -9,7 +9,7 @@ type ListNode struct {
 // https://leetcode.com/problems/linked-list-cycle
 
 // Double pointer solution
-func hasCycle(head *ListNode) bool {
+func HasCycle(head *ListNode) bool {
 	if head == nil || head.Next == nil {
 		return false
 	}

@@ -1,5 +1,9 @@
 package algorithms
 
+import (
+	data_structures "github.com/ocintnaf/leetcode/data_structures/stack"
+)
+
 // Definition for a binary tree node
 type TreeNode struct {
 	Val   int
@@ -11,9 +15,9 @@ type TreeNode struct {
 // https://leetcode.com/problems/binary-tree-inorder-traversal/description/
 
 // Iterative solution
-func inorderTraversal(root *TreeNode) []int {
+func InorderTraversal(root *TreeNode) []int {
 	var result []int
-	nodesStack := new(Stack)
+	nodesStack := new(data_structures.Stack[*TreeNode])
 
 	currentNode := root
 

@@ -48,25 +48,6 @@ func isPalindrome(number int) bool {
 }
 ```
 
-##### TypeScript
-
-```typescript
-const isPalindrome = (num: number): boolean => {
-  if (num < 0) return false
-
-  const originalNum = num
-  let reversedNum = 0
-
-  while (num > 0) {
-    const remainder = num % 10
-    reversedNum = reversedNum * 10 + remainder
-    num = Math.floor(num / 10)
-  }
-
-  return reversedNum === originalNum
-}
-```
-
 #### Complexity Analysis
 
 - **Time complexity** : `O(log10(n))`. We divided the input by 10 for every iteration, so the time complexity is `O(log10(n))`.

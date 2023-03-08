@@ -4,7 +4,7 @@ package algorithms
 // https://leetcode.com/problems/find-the-pivot-integer/
 
 // Add and subtract solution
-func pivotInteger(n int) int {
+func PivotInteger(n int) int {
 	sumOfAllNumbers := n * (n + 1) / 2
 	sumOfFirstKNumbers := 0
 

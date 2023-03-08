@@ -54,24 +54,6 @@ func reverseList(head *ListNode) *ListNode {
 }
 ```
 
-##### TypeScript
-
-```typescript
-const reverseList = (head: ListNode | null): ListNode | null => {
-  let prev: ListNode | null = null
-  let curr: ListNode | null = head
-
-  while (curr) {
-    const next = curr.next
-    curr.next = prev
-    prev = curr
-    curr = next
-  }
-
-  return prev
-}
-```
-
 #### Complexity Analysis
 
 - **Time Complexity** : `O(n)`, where `n` is the number of nodes in the linked list.

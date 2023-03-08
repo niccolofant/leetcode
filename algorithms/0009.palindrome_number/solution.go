@@ -4,7 +4,7 @@ package algorithms
 // https://leetcode.com/problems/palindrome-number/
 
 // Modulo and division solution
-func isPalindrome(number int) bool {
+func IsPalindrome(number int) bool {
 	if number < 0 {
 		return false
 	}

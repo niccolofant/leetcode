@@ -64,26 +64,6 @@ func hasCycle(head *ListNode) bool {
 }
 ```
 
-##### TypeScript
-
-```typescript
-const hasCycle = (head: ListNode | null): boolean => {
-  if (!head) return false
-
-  let slowHead: ListNode | null | undefined = head
-  let fastHead: ListNode | null | undefined = head
-
-  while (slowHead && fastHead) {
-    slowHead = slowHead.next
-    fastHead = fastHead.next?.next
-
-    if (slowHead === fastHead) return true
-  }
-
-  return false
-}
-```
-
 #### Complexity Analysis
 
 - **Time Complexity** : `O(n)`.

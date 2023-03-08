@@ -9,7 +9,7 @@ type ListNode struct {
 // https://leetcode.com/problems/reverse-linked-list/
 
 // Iterative solution
-func reverseList(head *ListNode) *ListNode {
+func ReverseList(head *ListNode) *ListNode {
 	var prev *ListNode = nil
 	curr := head
 
