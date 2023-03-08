@@ -36,3 +36,16 @@ func InorderTraversal(root *TreeNode) []int {
 
 	return result
 }
+
+// Recursive solution
+func InorderTraversalRecursive(root *TreeNode) []int {
+	var result []int
+
+	if root != nil {
+		result = append(result, InorderTraversalRecursive(root.Left)...)
+		result = append(result, root.Val)
+		result = append(result, InorderTraversalRecursive(root.Right)...)
+	}
+
+	return result
+}
