@@ -1,8 +1,6 @@
 package algorithms
 
-import (
-	data_structures "github.com/ocintnaf/leetcode/data_structures/stack"
-)
+import data_structures "github.com/ocintnaf/leetcode/data_structures/stack"
 
 // Definition for a binary tree node
 type TreeNode struct {
